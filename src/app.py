@@ -22,3 +22,5 @@ def halth():
 def details():
     hostname,ip=fetchDetails()
     return render_template("index.html",hostname=hostname,ip=ip)
+
+app.run(host='0.0.0.0', port=5000);
